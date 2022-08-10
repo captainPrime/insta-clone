@@ -1,7 +1,7 @@
-[
+export const USERS = [
     {
       "id": 1,
-      "image": 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg',
+      "image": "https://picsum.photos/20",
       "name": "Leanne Graham",
       "username": "Bret",
       "email": "Sincere@april.biz",
@@ -25,7 +25,7 @@
     },
     {
       "id": 2,
-      "image": 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg',
+      "image": "https://picsum.photos/30",
       "name": "Ervin Howell",
       "username": "Antonette",
       "email": "Shanna@melissa.tv",
@@ -49,7 +49,7 @@
     },
     {
       "id": 3,
-      "image": 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg',
+      "image": "https://picsum.photos/50",
       "name": "Clementine Bauch",
       "username": "Samantha",
       "email": "Nathan@yesenia.net",
@@ -73,6 +73,7 @@
     },
     {
       "id": 4,
+      "image": "https://picsum.photos/60",
       "name": "Patricia Lebsack",
       "username": "Karianne",
       "email": "Julianne.OConner@kory.org",
@@ -96,9 +97,9 @@
     },
     {
       "id": 5,
-      "image": 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg',
+      "image": "https://picsum.photos/70",
       "name": "Chelsey Dietrich",
-      "username": "Kamren",
+      "username": "Tolu",
       "email": "Lucio_Hettinger@annie.ca",
       "address": {
         "street": "Skiles Walks",
@@ -121,8 +122,8 @@
     {
       "id": 6,
       "name": "Mrs. Dennis Schulist",
-      "image": 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg',
-      "username": "Leopoldo_Corkery",
+      "image": "https://picsum.photos/80",
+      "username": "Joe",
       "email": "Karley_Dach@jasper.info",
       "address": {
         "street": "Norberto Crossing",
@@ -145,8 +146,8 @@
     {
       "id": 7,
       "name": "Kurtis Weissnat",
-      "image": 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg',
-      "username": "Elwyn.Skiles",
+      "image": "https://picsum.photos/90",
+      "username": "ElwynSkil",
       "email": "Telly.Hoeger@billy.biz",
       "address": {
         "street": "Rex Trail",
@@ -168,9 +169,9 @@
     },
     {
       "id": 8,
-      "image": 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg',
-      "name": "Nicholas Runolfsdottir V",
-      "username": "Maxime_Nienow",
+      "image": "https://picsum.photos/100",
+      "name": "NicholasRunolfsdottir V",
+      "username": "Maxime",
       "email": "Sherwood@rosamond.me",
       "address": {
         "street": "Ellsworth Summit",
@@ -192,8 +193,8 @@
     },
     {
       "id": 9,
-      "image": 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg',
-      "name": "Glenna Reichert",
+      "image": "https://picsum.photos/120",
+      "name": "GlennaReichert",
       "username": "Delphine",
       "email": "Chaim_McDermott@dana.io",
       "address": {
@@ -216,9 +217,9 @@
     },
     {
       "id": 10,
-      "image": 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg',
-      "name": "Clementina DuBuque",
-      "username": "Moriah.Stanton",
+      "image": "https://picsum.photos/200",
+      "name": "ClementinaDuBuque",
+      "username": "Moriah",
       "email": "Rey.Padberg@karina.biz",
       "address": {
         "street": "Kattie Turnpike",
