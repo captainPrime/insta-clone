@@ -14,6 +14,7 @@ const Post = ({ post }) => {
                 <Likes post={post} />
                 <Caption post={post} />
                 <CommentSection post={post} />
+                <Comments post={post} />
             </View>
         </View>
     )
@@ -98,6 +99,7 @@ const Caption = ({ post }) => (
 )
 
 const CommentSection = ({ post }) => (
+    <TouchableOpacity>
     <View style={{ marginTop: 5 }}>
         {
             !!post.comments.length && (
@@ -108,6 +110,23 @@ const CommentSection = ({ post }) => (
         }
 
     </View>
+    </TouchableOpacity>
+
+)
+
+const Comments = ({post}) => (
+    <>
+    {
+        post.comments.map((comments, index) => (
+            <View key={index} style={{flexDirection: 'row', marginTop: 5}}>
+                <Text style={{color: 'white'}}>
+                    <Text style={{fontWeight: '600'}}>{comments.user} </Text>
+                    {comments.comment}
+                </Text>
+            </View>
+        )) 
+    }
+    </>
 )
 
 const styles = StyleSheet.create({
