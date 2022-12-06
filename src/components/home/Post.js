@@ -9,7 +9,12 @@ const Post = ({ post }) => {
             <Divider width={1} orientation='vertical' />
             <PostHeader post={post} />
             <PostImage post={post} />
-            <PostFooter post={post} />
+            <View style={{ marginHorizontal: 15, marginTop: 10 }}>
+                <PostFooter post={post} />
+                <Likes post={post} />
+                <Caption post={post} />
+                <CommentSection post={post} />
+            </View>
         </View>
     )
 }
@@ -73,6 +78,37 @@ const PostHeader = ({ post }) => {
     )
 
 }
+
+const Likes = ({ post }) => (
+    <View style={{ flexDirection: 'row' }}>
+        <Text style={{ color: "white", fontWeight: '600' }}>
+            {post.likes.toLocaleString()} likes
+        </Text>
+    </View>
+)
+
+const Caption = ({ post }) => (
+    <View style={{ marginTop: 5 }}>
+        <Text style={{ color: 'white' }}>
+            <Text style={{ fontWeight: '600' }}>{post.user} </Text>
+            <Text>{post.caption}</Text>
+        </Text>
+    </View>
+
+)
+
+const CommentSection = ({ post }) => (
+    <View style={{ marginTop: 5 }}>
+        {
+            !!post.comments.length && (
+                <Text style={{ color: 'gray' }}>
+                    View {post.comments.length > 1 ? 'all ' : ''}{post.comments.length} {post.comments.length > 1 ? 'comments' : 'comment'}
+                </Text>
+            )
+        }
+
+    </View>
+)
 
 const styles = StyleSheet.create({
     storyImage: {
