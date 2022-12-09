@@ -1,4 +1,4 @@
-import { View, Image, Pressable, TouchableOpacity, StyleSheet } from 'react-native'
+import { View, Image, Pressable, StyleSheet } from 'react-native'
 import React, { useState } from 'react'
 import { Divider } from 'react-native-elements'
 
